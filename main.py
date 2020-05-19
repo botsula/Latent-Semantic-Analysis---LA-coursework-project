@@ -94,9 +94,9 @@ if __name__ == "__main__":
             elif int(flag_c) == 2:
                 documents = document_fairytales
         elif flag.lower() == 'q':
-            documents = document_query
-	else:
-	    restart = False
+            documents = documents_query
+        else:
+            restart = False
 
         tokenizer = Tokenizer(documents)
         texts = tokenizer.tokenize()
